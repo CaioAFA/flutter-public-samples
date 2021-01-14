@@ -6,7 +6,7 @@ import 'package:flutter_navigation_samples/gesture_navigation/tabs/tab_3.dart';
 class GestureNavigationHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return PageView(
+    return PageView( // Com esse Widget, englobamos todas as "páginas"
       children: [
         Tab1(),
         Tab2(),

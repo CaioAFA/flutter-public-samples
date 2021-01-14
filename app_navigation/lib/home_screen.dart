@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_navigation_samples/gesture_navigation/home.dart';
+import 'package:flutter_navigation_samples/tab_navigation/home.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -32,7 +33,11 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Tab Navigation',
-              onTap: (){}
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context)=>TabNavigationHome())
+                );
+              }
           ),
         ],
       ),
@@ -54,6 +59,17 @@ class HomeScreen extends StatelessWidget {
                     child: Image.network(
                       'https://media1.tenor.com/images/a4fc4e72e879f298b85e3f31fe89cc67/tenor.gif?itemid=14262407',
                       fit: BoxFit.fill,
+                      loadingBuilder:(BuildContext context, Widget child,ImageChunkEvent loadingProgress) {
+                        if (loadingProgress == null) return child;
+                        return Center(
+                          child: CircularProgressIndicator(
+                            value: loadingProgress.expectedTotalBytes != null ?
+                            loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes
+                                : null,
+                            backgroundColor: Colors.black,
+                          ),
+                        );
+                      },
                     ),
                   )
               ),
