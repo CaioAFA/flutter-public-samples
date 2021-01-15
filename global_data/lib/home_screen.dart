@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter_navigation_samples/drawer_navigation/home.dart';
-import 'package:flutter_navigation_samples/gesture_navigation/home.dart';
-import 'package:flutter_navigation_samples/tab_navigation/home.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -24,34 +20,25 @@ class HomeScreen extends StatelessWidget {
               title: 'Drawer Navigation',
               imagePath: 'images/DrawerNavigation.gif',
               onTap: (){
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context)=>DrawerNavigationHome())
-                );
               }
           ),
           _createCard(
               title: 'Gesture Navigation',
               imagePath: 'images/GestureNavigator.gif',
               onTap: (){
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context)=>GestureNavigationHome())
-                );
               }
           ),
           _createCard(
               title: 'Tab Navigation',
               imagePath: 'images/TabNavigation.gif',
               onTap: (){
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context)=>TabNavigationHome())
-                );
               }
           ),
         ],
       ),
     );
   }
-  
+
   Widget _createCard({@required String title, @required String imagePath, @required VoidCallback onTap}){
     return Card(
       margin: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
@@ -70,6 +57,7 @@ class HomeScreen extends StatelessWidget {
                       aspectRatio: 0.9,
                       child: Image.asset(imagePath, fit: BoxFit.fill,),
                     ),
+                    color: Colors.red,
                   )
               ),
               Flexible(
