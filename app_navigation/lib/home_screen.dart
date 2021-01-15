@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_navigation_samples/drawer_navigation/home.dart';
 import 'package:flutter_navigation_samples/gesture_navigation/home.dart';
 import 'package:flutter_navigation_samples/tab_navigation/home.dart';
 
@@ -21,10 +22,16 @@ class HomeScreen extends StatelessWidget {
         children: [
           _createCard(
               title: 'Drawer Navigation',
-              onTap: (){}
+              imagePath: 'images/DrawerNavigation.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context)=>DrawerNavigationHome())
+                );
+              }
           ),
           _createCard(
               title: 'Gesture Navigation',
+              imagePath: 'images/GestureNavigator.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context)=>GestureNavigationHome())
@@ -33,6 +40,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Tab Navigation',
+              imagePath: 'images/TabNavigation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context)=>TabNavigationHome())
@@ -44,8 +52,10 @@ class HomeScreen extends StatelessWidget {
     );
   }
   
-  Widget _createCard({@required String title, @required VoidCallback onTap}){
+  Widget _createCard({@required String title, @required String imagePath, @required VoidCallback onTap}){
     return Card(
+      margin: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+      elevation: 5.0,
       child: InkWell( // Get Tap event
         onTap: onTap,
         child: Container(
@@ -56,21 +66,11 @@ class HomeScreen extends StatelessWidget {
               Flexible(
                   flex: 2,
                   child: Container(
-                    child: Image.network(
-                      'https://media1.tenor.com/images/a4fc4e72e879f298b85e3f31fe89cc67/tenor.gif?itemid=14262407',
-                      fit: BoxFit.fill,
-                      loadingBuilder:(BuildContext context, Widget child,ImageChunkEvent loadingProgress) {
-                        if (loadingProgress == null) return child;
-                        return Center(
-                          child: CircularProgressIndicator(
-                            value: loadingProgress.expectedTotalBytes != null ?
-                            loadingProgress.cumulativeBytesLoaded / loadingProgress.expectedTotalBytes
-                                : null,
-                            backgroundColor: Colors.black,
-                          ),
-                        );
-                      },
+                    child: AspectRatio(
+                      aspectRatio: 0.9,
+                      child: Image.asset(imagePath, fit: BoxFit.fill,),
                     ),
+                    color: Colors.red,
                   )
               ),
               Flexible(
