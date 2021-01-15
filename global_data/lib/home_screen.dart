@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -11,26 +12,30 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Navigation Samples'),
+        title: Column(
+          children: [
+            Text('Flutter Global Data'),
+            Text(
+              'Acessando variáveis e métodos globais',
+              style: TextStyle(
+                fontSize: 16.0
+              ),
+            ),
+          ],
+        ),
         centerTitle: true,
       ),
       body: ListView(
         children: [
           _createCard(
-              title: 'Drawer Navigation',
-              imagePath: 'images/DrawerNavigation.gif',
+              title: 'BLoC Pattern',
+              imagePath: 'images/bloc.png',
               onTap: (){
               }
           ),
           _createCard(
-              title: 'Gesture Navigation',
-              imagePath: 'images/GestureNavigator.gif',
-              onTap: (){
-              }
-          ),
-          _createCard(
-              title: 'Tab Navigation',
-              imagePath: 'images/TabNavigation.gif',
+              title: 'Scoped Model',
+              imagePath: 'images/scoped-model.jpg',
               onTap: (){
               }
           ),
@@ -46,35 +51,29 @@ class HomeScreen extends StatelessWidget {
       child: InkWell( // Get Tap event
         onTap: onTap,
         child: Container(
+          padding: EdgeInsets.only(top: 4.0),
           height: 200.0,
-          child: Row(
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Flexible(
-                  flex: 2,
-                  child: Container(
-                    child: AspectRatio(
-                      aspectRatio: 0.9,
-                      child: Image.asset(imagePath, fit: BoxFit.fill,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Flexible( // With this Flexible, text wraps if necessary.
+                    child: Text(
+                      title,
+                      textAlign: TextAlign.center,
+                      style: cardTextStyle,
                     ),
-                    color: Colors.red,
-                  )
+                  ),
+                ],
               ),
-              Flexible(
-                flex: 4,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Flexible( // With this Flexible, text wraps if necessary.
-                      child: Text(
-                        title,
-                        textAlign: TextAlign.center,
-                        style: cardTextStyle,
-                      ),
-                    ),
-                  ],
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: Image.asset(imagePath, fit: BoxFit.fill,),
                 ),
-              ),
+              )
             ],
           ),
         ),
