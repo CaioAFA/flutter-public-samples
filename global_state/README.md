@@ -1,6 +1,6 @@
-# global_data
+# Global State
 
-Sample Flutter app with global data (variables and functions).
+App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Estado**.
 
 ## Getting Started
 
