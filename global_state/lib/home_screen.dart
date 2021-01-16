@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:global_data/provider/main_provider.dart';
 import 'package:global_data/scoped_model/home_scoped_model.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Text('Flutter Global Data'),
             Text(
-              'Acessando variáveis e métodos globais',
+              'Acessando o estado global do App',
               style: TextStyle(
                 fontSize: 16.0
               ),
@@ -29,14 +30,19 @@ class HomeScreen extends StatelessWidget {
       body: ListView(
         children: [
           _createCard(
-              title: 'BLoC Pattern',
-              imagePath: 'images/bloc.png',
+              title: 'Providers',
+              imagePath: 'images/provider.jpg',
+              plugins: ['provider: ^4.0.0'],
               onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context)=>MainProvider())
+                );
               }
           ),
           _createCard(
               title: 'Scoped Model',
               imagePath: 'images/scoped-model.jpg',
+              plugins: ['scoped_model: ^1.0.1'],
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context)=>HomeScopedModel())
@@ -48,7 +54,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _createCard({@required String title, @required String imagePath, @required VoidCallback onTap}){
+  Widget _createCard({@required String title, @required List<String> plugins, @required String imagePath, @required VoidCallback onTap}){
     return Card(
       margin: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
       elevation: 5.0,
@@ -56,7 +62,7 @@ class HomeScreen extends StatelessWidget {
         onTap: onTap,
         child: Container(
           padding: EdgeInsets.only(top: 4.0),
-          height: 200.0,
+          height: 260.0,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
@@ -71,6 +77,16 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ],
+              ),
+              Divider(),
+              Text(
+                ' Plugins:',
+                style: TextStyle(
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              Text(
+                plugins.map((plugin) => ' - ' + plugin).toList().join('\n'),
               ),
               Expanded(
                 child: Padding(
