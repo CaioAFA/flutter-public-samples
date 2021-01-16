@@ -2,6 +2,10 @@
 
 App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Estado**.
 
+Plugins para Gerenciamento de Estado Utilizados:
+- Provider
+- ScopedModel
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
