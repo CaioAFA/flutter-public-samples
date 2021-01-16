@@ -1,6 +1,6 @@
 # Global State
 
-App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Estado**.
+App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Estado**: quando um **estado é alterado**, isso é **refletido na aplicação toda!**
 
 Plugins para Gerenciamento de Estado Utilizados:
 - Provider
