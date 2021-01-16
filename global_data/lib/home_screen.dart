@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:global_data/scoped_model/home_scoped_model.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -37,6 +38,9 @@ class HomeScreen extends StatelessWidget {
               title: 'Scoped Model',
               imagePath: 'images/scoped-model.jpg',
               onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context)=>HomeScopedModel())
+                );
               }
           ),
         ],
