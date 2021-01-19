@@ -110,7 +110,7 @@ class SearchBuildReturnDataSearch extends SearchDelegate<String>{
           title: Text(result['title']),
           leading: Icon(Icons.play_arrow),
           onTap: (){
-            close(context, result['title']);
+            query = result['title'];
           },
         );
       }).toList(),
