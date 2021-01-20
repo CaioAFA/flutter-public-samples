@@ -4,10 +4,11 @@ App Exemplo de criação de tela para pesquisas. Nesses exemplos, abrimos telas 
 
 ## Procurar e retornar um resultado
 
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/search_screen_sample/images/search_return.gif" width="200" height="400" />
 
 ## Procurar, desenhar uma tela e retornar um resultado
 
-
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/search_screen_sample/images/search_build_return.gif" width="200" height="400" />
 
 ## Getting Started
 
