@@ -1,6 +1,13 @@
 # search_screen_sample
 
-App Exemplo de criação de tela para pesquisas.
+App Exemplo de criação de tela para pesquisas. Nesses exemplos, abrimos telas de pesquisa e retornamos valores.
+
+## Procurar e retornar um resultado
+
+
+## Procurar, desenhar uma tela e retornar um resultado
+
+
 
 ## Getting Started
 
