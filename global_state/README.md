@@ -6,6 +6,10 @@ Plugins para Gerenciamento de Estado Utilizados:
 - Provider
 - ScopedModel
 
+## Observação
+Outro método de compartilhar dados e funções globais é com o BLoC Pattern. Há um exemplo de implementação nesse mesmo repositório,
+não esqueça de vê-lo também! Ele foi separado devido à uma complexidade de código maior.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
