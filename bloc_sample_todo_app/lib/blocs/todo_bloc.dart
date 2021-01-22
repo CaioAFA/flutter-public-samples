@@ -1,6 +1,9 @@
+import 'dart:convert';
+
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:bloc_sample_todo_app/models/todo_model.dart';
 import 'package:rxdart/rxdart.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class TodoBloc implements BlocBase{
 
@@ -15,8 +18,7 @@ class TodoBloc implements BlocBase{
 
   // Execute on App Start
   TodoBloc(){
-    addTodo('Titulo 1', 'Descrição 1');
-    addTodo('Titulo 2', 'Descrição 2');
+    _loadSavedTodoList();
   }
 
   void addTodo(String title, String description){
@@ -28,18 +30,44 @@ class TodoBloc implements BlocBase{
 
     // Send the new todoMap to Widgets
     _todoController.sink.add(_todoMap);
+
+    _saveTodoList();
   }
 
   void removeTodoById(int id){
     _todoMap.remove(id.toString());
 
+    _saveTodoList();
     _todoController.sink.add(_todoMap);
   }
 
   void toggleTodoById(int id){
     _todoMap[id.toString()].toggleIsDone();
 
+    _saveTodoList();
     _todoController.sink.add(_todoMap);
+  }
+
+  void _saveTodoList() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+
+    prefs.setString('todoList', json.encode(_todoMap));
+  }
+
+  void _loadSavedTodoList(){
+    SharedPreferences.getInstance().then((prefs){
+      Map<String, dynamic> todoListJson = json.decode(prefs.getString('todoList'));
+      Map<String, Todo> loadedTodoMap = {};
+
+      // Parse Json's to To do Models
+      todoListJson.keys.forEach((key){
+        loadedTodoMap[key] = Todo.fromJson(todoListJson[key]);
+      });
+
+      // Load the data and updates the interface
+      _todoMap = loadedTodoMap;
+      _todoController.sink.add(loadedTodoMap);
+    });
   }
 
   // You must implement this method.
@@ -48,5 +76,4 @@ class TodoBloc implements BlocBase{
     // Always close the Stream!
     _todoController.close();
   }
-
 }

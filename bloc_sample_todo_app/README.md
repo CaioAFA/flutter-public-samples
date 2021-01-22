@@ -15,7 +15,7 @@ no BLoC.
 
 - Não crie Widgets Statefull! Não é necessário: crie apenas Stateless.
 
-- Recuperamos os dados vindos das Streams pelo Widget StreamBuilder.
+- Recuperamos os dados vindos das Streams pelo Widget StreamBuilder!
 
 # Vantagens do BLoC Pattern
 - Não é necessário utilizar o setState, logo não é necessário redesenhar toda a tela. Apenas o que é
