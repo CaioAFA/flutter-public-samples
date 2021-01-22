@@ -3,12 +3,12 @@
 App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Estado**: quando um **estado é alterado**, isso é **refletido na aplicação toda!**
 
 Plugins para Gerenciamento de Estado Utilizados:
-- Provider
-- ScopedModel
+- Provider (Exemplo nesse App)
+- ScopedModel (Exemplo nesse App)
+- BLoC (Exemplo em outro App desse repositório)
 
-## Observação
-Outro método de compartilhar dados e funções globais é com o BLoC Pattern. Há um exemplo de implementação nesse mesmo repositório,
-não esqueça de vê-lo também! Ele foi separado devido à uma complexidade de código maior.
+# Comparações
+![Comparações](https://github.com/CaioAFA/flutter-public-samples/blob/master/global_state/misc/global_state_comparison.jpg?raw=true)
 
 ## Getting Started
 
