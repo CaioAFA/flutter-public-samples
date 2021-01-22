@@ -10,7 +10,8 @@ class TodoBloc implements BlocBase{
   // Structure: todoId => TodoModel
   Map<String, Todo> _todoMap = {};
 
-  // Create the Stream
+  // Create the Stream. In this case, we use the BehaviorSubject from RxDart.
+  // This Stream sends the last data sended to new StreamBuilders!
   final _todoController = BehaviorSubject<Map<String, Todo>>();
 
   // Get the Stream output
