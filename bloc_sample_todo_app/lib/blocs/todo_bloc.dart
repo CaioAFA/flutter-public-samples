@@ -21,7 +21,7 @@ class TodoBloc implements BlocBase{
 
   void addTodo(String title, String description){
     int todoId = new DateTime.now().microsecondsSinceEpoch;
-    bool todoIsDone = true;
+    bool todoIsDone = false;
     Todo newTodo = Todo(todoId, title, description, todoIsDone);
 
     _todoMap[todoId.toString()] = newTodo;

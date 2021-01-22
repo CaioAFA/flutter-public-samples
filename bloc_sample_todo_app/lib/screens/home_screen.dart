@@ -14,8 +14,42 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('ToDo - BLoC Pattern'),
-        centerTitle: true,
+        centerTitle: false,
+        actions: [
+          StreamBuilder<Map<String, Todo>>(
+            stream: todoBloc.todoListOutput,
+            initialData: {},
+            builder: (context, snapshot){
+              final int todoListLength = snapshot.data.keys.length;
+
+              return Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.only(right: 6.0),
+                child: Text(
+                  '${todoListLength.toString()} ${todoListLength == 1 ? 'Item' : 'Itens'}',
+                  style: TextStyle(
+                    fontSize: 18.0,
+                  ),
+                ),
+              );
+            },
+          )
+        ],
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () async {
+          final newTodoData = await _showCreateTodoAlertDialog(context);
+
+          if(newTodoData.keys.length > 0){
+            todoBloc.addTodo(
+              newTodoData['title'],
+              newTodoData['description']
+            );
+          }
+        },
+      ),
+      floatingActionButtonAnimator: FloatingActionButtonAnimator.scaling,
       body: StreamBuilder<Map<String, Todo>>(
         stream: todoBloc.todoListOutput,
         builder: (context, snapshot){
@@ -132,6 +166,77 @@ class HomeScreen extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+
+  Future<Map<String, dynamic>> _showCreateTodoAlertDialog(BuildContext context){
+    final _formKey = GlobalKey<FormState>();
+
+    final _createTodoTitleController = TextEditingController();
+    final _createTodoDescriptionController = TextEditingController();
+
+    return showDialog(
+      context: context,
+      builder: (BuildContext context){
+        return AlertDialog(
+          title: const Text('Criar Tarefa'),
+          content: Form(
+            key: _formKey,
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                TextFormField(
+                  controller: _createTodoTitleController,
+                  decoration: InputDecoration(
+                    hintText: 'Título'
+                  ),
+                  validator: (value){
+                    if(value.isEmpty) return 'Preencha esse campo!';
+                    return null;
+                  },
+                ),
+                TextFormField(
+                  controller: _createTodoDescriptionController,
+                  decoration: InputDecoration(
+                    hintText: 'Decrição',
+                  ),
+                  keyboardType: TextInputType.multiline,
+                  maxLines: null,
+                  minLines: 4,
+                  textAlign: TextAlign.justify,
+                  validator: (value){
+                    if(value.isEmpty) return 'Preencha esse campo!';
+                    return null;
+                  },
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            FlatButton(
+              child: const Text("Cancelar",),
+              onPressed: () {
+                Navigator.of(context).pop(<String, dynamic>{});
+              },
+            ),
+            FlatButton(
+              color: Theme.of(context).primaryColor,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              ),
+              child: const Text("Criar", style: TextStyle(color: Colors.white),),
+              onPressed: () {
+                if (_formKey.currentState.validate()) {
+                  Navigator.of(context).pop({
+                    'title': _createTodoTitleController.text,
+                    'description': _createTodoDescriptionController.text
+                  });
+                }
+              },
+            ),
+          ],
+        );
+      }
     );
   }
 }
