@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:useful_widgets/alert_dialog/alert_dialog_form_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,6 +24,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => InfiniteScrollSample())
+                );
+              }
+          ),
+          _createCard(
+              title: 'AlertDialog Form',
+              imagePath: 'images/alert_dialog_form.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => AlertDialogFormHome())
                 );
               }
           ),
