@@ -10,21 +10,25 @@ Aplicação de Exemplo Utilizando BLoC.
 no BLoC.
 
 - Lembre-se:
-    - sink => entrada da Stream.
-    - stream => saída da Stream.
+    - **sink** => entrada da Stream.
+    - **stream** => saída da Stream.
 
-- Não crie Widgets Statefull! Não é necessário: crie apenas Stateless.
+- Não crie Widgets Statefull! Não é necessário: **crie apenas Stateless**.
 
 - Recuperamos os dados vindos das Streams pelo Widget StreamBuilder!
+
+- Todo dado a ser compartilhado na aplicação deve ter sua própria Stream.
+Além disso, é necessário expor sua saída através de um método de Get.
 
 # Vantagens do BLoC Pattern
 - Não é necessário utilizar o setState, logo não é necessário redesenhar toda a tela. Apenas o que é
 alterado é redesenhado!
 
 # Observações
-- A Stream do RxDart BehaviorSubject é um tipo especial: ela armazena o último dado enviado pela
-Stream. Dessa forma, quando um Widget é renderizado posteriormente ao envio do dado, ele não perde
-informação.
+- A Stream do RxDart **BehaviorSubject** é um tipo especial: ela **armazena o último dado enviado pela Stream**.
+Dessa forma, quando um Widget é renderizado posteriormente ao envio do dado, ele **não perde informação**.
+Isso é muito útil **quando algum dado é enviado à alguma Stream logo no início do App**, antes dos Widgets
+serem renderizados. Quando eles forem desenhados, receberão o último dado enviado!
 
 # Plugins Utilizados
 - **Shared Preferences**: utilizado para persistir os dados.
