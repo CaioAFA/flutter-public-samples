@@ -43,7 +43,7 @@ class _InfiniteScrollSampleState extends State<InfiniteScrollSample> {
             return _buildCard(data[index].toString());
           }
           else if(index > 1){ // Situation 2/3 - Load more data Async and render the Loader
-             _loadMoreData(); // Load more data
+             _loadMoreData(); // Load more data (The functions must return Future)
             return _buildLoader();
           }
 
