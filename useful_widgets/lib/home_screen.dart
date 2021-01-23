@@ -19,7 +19,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           _createCard(
               title: 'Infinite Scroll\n(Lista Infinita)',
-              imagePath: 'images/comming_soon.gif',
+              imagePath: 'images/infinite_scroll.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => InfiniteScrollSample())

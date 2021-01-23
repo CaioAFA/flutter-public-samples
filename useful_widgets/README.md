@@ -2,6 +2,10 @@
 
 Useful Widgets Samples.
 
+## Infinite Scroll
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/infinite_scroll.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
