@@ -2,6 +2,23 @@
 
 Flutter Animation Samples.
 
+## Linear Animation
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/linear-animation.gif" width="200" height="400" />
+
+## Ping Pong Animation
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/ping-pong-animation.gif" width="200" height="400" />
+
+## Curve Animation
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/curve-animation.gif" width="200" height="400" />
+
+## Hero Animation
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/hero-animation.gif" width="200" height="400" />
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
