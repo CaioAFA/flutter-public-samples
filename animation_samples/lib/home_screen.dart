@@ -3,6 +3,8 @@ import 'package:animation_samples/linear_animation/linear_animation_home.dart';
 import 'package:animation_samples/ping_pong_animation/ping_pong_home.dart';
 import 'package:flutter/material.dart';
 
+import 'hero_animation/hero_animation_home.dart';
+
 class HomeScreen extends StatelessWidget {
 
   final TextStyle cardTextStyle = TextStyle(
@@ -43,6 +45,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CurveAnimationHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Hero Animation',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => HeroAnimationHome())
                 );
               }
           ),
