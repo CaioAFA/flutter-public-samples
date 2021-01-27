@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           _createCard(
               title: 'Linear Animation',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/animations_preview/linear-animation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => LinearAnimationHome())
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Ping Pong Animation',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/animations_preview/ping-pong-animation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => PingPongAnimationHome())
@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Curve Animation',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/animations_preview/curve-animation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CurveAnimationHome())
@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Hero Animation',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/animations_preview/hero-animation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => HeroAnimationHome())
