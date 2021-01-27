@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Novos Widgets serão adicionados aqui quando eu descobri-los!',
-              imagePath: 'images/comming_soon.gif',
+              imagePath: 'images/no-image.jpg',
               onTap: (){}
           ),
         ],
