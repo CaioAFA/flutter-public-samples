@@ -26,6 +26,14 @@ Flutter Animation Samples.
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/screen-transition-animation.gif" width="200" height="400" />
 
+## Staggered Animation (Duas Animações Ou Mais Simultâneas)
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/staggered-animation.gif" width="200" height="400" />
+
+## Loading Button Animation
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/loading-button-animation.gif" width="200" height="400" />
+
 ## Considerações e Observações
 
 - É possível criar uma classe com animações facilmente através do atalho stanim.

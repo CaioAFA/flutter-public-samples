@@ -1,8 +1,10 @@
 import 'package:animation_samples/curve_animation/curve_animation_home.dart';
 import 'package:animation_samples/linear_animation/linear_animation_home.dart';
 import 'package:animation_samples/list_slide_animation/list_slide_animation_home.dart';
+import 'package:animation_samples/loading_button_animation/loading_button_animation_home.dart';
 import 'package:animation_samples/ping_pong_animation/ping_pong_home.dart';
 import 'package:animation_samples/screen_transition/screen_transition_home.dart';
+import 'package:animation_samples/staggered_animation/staggered_animation_home.dart';
 import 'package:flutter/material.dart';
 
 import 'hero_animation/hero_animation_home.dart';
@@ -79,13 +81,21 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Staggered Animation (Duas Ou Mais Animações Simultâneas)',
-              imagePath: 'images/no-image.jpg',
-              onTap: (){}
+              imagePath: 'images/animations_preview/staggered-animation.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => StaggeredAnimationHome())
+                );
+              }
           ),
           _createCard(
               title: 'Loading Button Animation',
-              imagePath: 'images/no-image.jpg',
-              onTap: (){}
+              imagePath: 'images/animations_preview/loading-button-animation.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => LoadingButtonAnimationHome())
+                );
+              }
           ),
           _createCard(
               title: 'Novas Animações serão adicionadas aqui quando eu descobri-las!',
