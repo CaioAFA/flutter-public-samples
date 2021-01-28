@@ -69,13 +69,23 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Scren Transition',
-              imagePath: 'images/no-image.jpg',
+              title: 'Screen Transition',
+              imagePath: 'images/animations_preview/screen-transition-animation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ScreenTransitionHome())
                 );
               }
+          ),
+          _createCard(
+              title: 'Staggered Animation (Duas Ou Mais Animações Simultâneas)',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){}
+          ),
+          _createCard(
+              title: 'Loading Button Animation',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){}
           ),
           _createCard(
               title: 'Novas Animações serão adicionadas aqui quando eu descobri-las!',
