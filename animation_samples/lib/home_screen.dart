@@ -1,5 +1,6 @@
 import 'package:animation_samples/curve_animation/curve_animation_home.dart';
 import 'package:animation_samples/linear_animation/linear_animation_home.dart';
+import 'package:animation_samples/list_slide_animation/list_slide_animation_home.dart';
 import 'package:animation_samples/ping_pong_animation/ping_pong_home.dart';
 import 'package:flutter/material.dart';
 
@@ -54,6 +55,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => HeroAnimationHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'List Slide Animation (Animação De Edge Insets)',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => ListSlideAnimationHome())
                 );
               }
           ),
