@@ -59,8 +59,8 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'List Slide Animation (Animação De Edge Insets)',
-              imagePath: 'images/no-image.jpg',
+              title: 'List Slide Animation (Animação De Edge Insets - Margem)',
+              imagePath: 'images/animations_preview/list-slide-animation.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ListSlideAnimationHome())
