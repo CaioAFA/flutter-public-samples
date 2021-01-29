@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:useful_widgets/alert_dialog/alert_dialog_form_home.dart';
+import 'package:useful_widgets/alert_dialog_form/alert_dialog_form_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
+
+import 'alert_dialog_form/alert_dialog_form_home.dart';
+import 'custom_scroll_view/custom_scroll_view_home.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -33,6 +36,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => AlertDialogFormHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Custom Scroll View',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => CustomScrollViewHome())
                 );
               }
           ),

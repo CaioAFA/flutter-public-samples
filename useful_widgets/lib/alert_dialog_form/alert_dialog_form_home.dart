@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:useful_widgets/alert_dialog/form.dart';
+import 'package:useful_widgets/alert_dialog_form/form.dart';
 
 class AlertDialogFormHome extends StatefulWidget {
   @override
