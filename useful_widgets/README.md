@@ -11,6 +11,14 @@ Useful Widgets Samples.
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/alert_dialog_form.gif" width="200" height="400" />
 
 ## Custom Scroll View
+Aqui, temos 4 Widgets de exemplo:
+- SliverAppBar (repare na animação de quando a tela é "abaixada" e "levantada")
+
+- SliverToBoxAdapter (em um Custom Scroll View, tudo deve ser um Sliver. Esse Widget é útil quando queremos algo como um Container)
+
+- SliverList (útil para criar listas em um Custom Scroll View)
+
+- SliverGrid (útil para criar Grids)
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/custom-scroll-view.gif" width="200" height="400" />
 
