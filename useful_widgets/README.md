@@ -4,15 +4,15 @@ Useful Widgets Samples.
 
 ## Infinite Scroll
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/preview/infinite_scroll.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/infinite_scroll.gif" width="200" height="400" />
 
 ## Alert Dialog Form
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/preview/alert_dialog_form.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/alert_dialog_form.gif" width="200" height="400" />
 
 ## Custom Scroll View
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/preview/custom_scroll_view.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/custom_scroll_view.gif" width="200" height="400" />
 
 ## Getting Started
 
