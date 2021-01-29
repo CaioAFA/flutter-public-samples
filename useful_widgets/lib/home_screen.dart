@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           _createCard(
               title: 'Infinite Scroll\n(Lista Infinita)',
-              imagePath: 'images/infinite_scroll.gif',
+              imagePath: 'images/previews/infinite_scroll.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => InfiniteScrollSample())
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'AlertDialog Form',
-              imagePath: 'images/alert_dialog_form.gif',
+              imagePath: 'images/previews/alert_dialog_form.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => AlertDialogFormHome())
@@ -40,8 +40,8 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Custom Scroll View',
-              imagePath: 'images/no-image.jpg',
+              title: 'Custom Scroll View\n(Preste Atenção na AppBar)',
+              imagePath: 'images/previews/custom-scroll-view.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CustomScrollViewHome())

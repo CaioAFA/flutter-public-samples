@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class CustomScrollViewSliverList extends StatelessWidget {
+class CustomScrollViewSliverListSample extends StatelessWidget {
 
   final getRandomColor;
 
-  CustomScrollViewSliverList(this.getRandomColor);
+  CustomScrollViewSliverListSample(this.getRandomColor);
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:useful_widgets/custom_scroll_view/sliver_appbar.dart';
+import 'package:useful_widgets/custom_scroll_view/sliver_grid.dart';
 import 'dart:math' as math;
 import 'package:useful_widgets/custom_scroll_view/sliver_list.dart';
 
@@ -7,18 +9,13 @@ class CustomScrollViewHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // In this case, we don't create an AppBar at the Scaffold Widget!
+    // We create at the CustomScrollView.
     return Scaffold(
       body: CustomScrollView(
         // Inside one CustomScrollView, all childrens must be "Slivers"
         slivers: [
-          SliverAppBar(
-            floating: true,
-            pinned: false, // Disappear when scroll down
-            flexibleSpace: FlexibleSpaceBar(
-              title: Text('Custom Scroll View!'),
-              centerTitle: true,
-            ),
-          ),
+
+          CustomScrollViewSliverAppBar(),
 
           // Sample function that creates a "Container Sliver"
           _createSliverBox(
@@ -27,11 +24,19 @@ class CustomScrollViewHome extends StatelessWidget {
           ),
           _createSliverBox(
               title: 'Exemplo de uma Lista Simples!',
-              color: Colors.greenAccent
+              color: Colors.pinkAccent
           ),
 
-          // List Sliver sample
-          CustomScrollViewSliverList(getRandomColor)
+          // Sliver List Sample
+          CustomScrollViewSliverListSample(getRandomColor),
+
+          _createSliverBox(
+              title: 'Exemplo de um Grid!',
+              color: Colors.pinkAccent
+          ),
+
+          // Sliver Grid Sample
+          CustomScrollViewSliverGridSample(getRandomColor)
         ],
       ),
     );
@@ -48,11 +53,6 @@ class CustomScrollViewHome extends StatelessWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           color: color,
-          border: Border.all(
-            color: Colors.black,
-            width: 10,
-            style: BorderStyle.solid
-          )
         ),
         child: Text(
           title,
