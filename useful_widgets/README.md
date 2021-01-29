@@ -12,7 +12,7 @@ Useful Widgets Samples.
 
 ## Custom Scroll View
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/custom_scroll_view.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/custom-scroll-view.gif" width="200" height="400" />
 
 ## Getting Started
 
