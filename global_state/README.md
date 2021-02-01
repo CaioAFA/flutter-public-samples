@@ -2,7 +2,7 @@
 
 App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Estado**: quando um **estado é alterado**, isso é **refletido na aplicação toda!**
 
-Plugins para Gerenciamento de Estado Utilizados:
+Plugins para Gerenciamento de Estado Utilizados (lembre-se de colocar os Widget que englobam esse estado global cobrindo apenas o necessário da aplicação):
 - Provider (Exemplo nesse App)
 - ScopedModel (Exemplo nesse App)
 - BLoC (Exemplo em outro App desse repositório)
