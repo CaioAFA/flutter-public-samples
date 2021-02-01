@@ -20,6 +20,8 @@ no BLoC.
 - Todo dado a ser compartilhado na aplicação deve ter sua própria Stream.
 Além disso, é necessário expor sua saída através de um método de Get.
 
+- Coloque o Widget BlocProvider cobrindo apenas o necessário da aplicação.
+
 # Vantagens do BLoC Pattern
 - Não é necessário utilizar o setState, logo não é necessário redesenhar toda a tela. Apenas o que é
 alterado é redesenhado!
