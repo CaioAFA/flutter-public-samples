@@ -17,6 +17,7 @@ class _CustomFormInputHomeState extends State<CustomFormInputHome> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
+        centerTitle: true,
         title: Column(
           children: [
             Text('Custom Form Inputs', ),

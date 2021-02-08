@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:useful_widgets/alert_dialog_form/alert_dialog_form_home.dart';
 import 'package:useful_widgets/custom_form_input/custom_form_input_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
+import 'package:useful_widgets/shimmer/shimmer_home.dart';
 
 import 'alert_dialog_form/alert_dialog_form_home.dart';
 import 'custom_scroll_view/custom_scroll_view_home.dart';
@@ -55,6 +56,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CustomFormInputHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Shimmer',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => ShimmerHome())
                 );
               }
           ),
