@@ -44,9 +44,11 @@ class _CustomFormInputHomeState extends State<CustomFormInputHome> {
               ),
             ),
             SizedBox(height: 20.0,),
-            ImageInput(
+            ImageInput( // Custom Input!
               context: context,
               validator: (List l){
+                // Here, we must return a String with the error text
+                // (or null without errors)
                 if(l.length == 0){
                   return 'Insira alguma foto!';
                 }
