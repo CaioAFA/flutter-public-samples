@@ -61,7 +61,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Shimmer',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/shimmer.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ShimmerHome())

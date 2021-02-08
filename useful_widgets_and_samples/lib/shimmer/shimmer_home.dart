@@ -13,7 +13,7 @@ class _ShimmerHomeState extends State<ShimmerHome> {
   String _subtitle = '';
 
   void _loadData(){
-    Future.delayed(Duration(seconds: 2)).then((_){
+    Future.delayed(Duration(seconds: 3)).then((_){
       setState(() {
         _isLoading = false;
 

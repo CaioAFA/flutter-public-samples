@@ -22,12 +22,14 @@ Aqui, temos 4 Widgets de exemplo:
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/custom-scroll-view.gif" width="200" height="400" />
 
-
 ## Custom Input Field
 Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um input obrigatório para imagens.
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/custom_form_input.gif" width="200" height="400" />
 
+## Shimmer - Efeito de Carregamento
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/shimmer.gif" width="200" height="400" />
 
 ## Getting Started
 
