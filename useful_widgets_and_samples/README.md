@@ -4,11 +4,11 @@ Useful Widgets Samples.
 
 ## Infinite Scroll
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/infinite_scroll.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/infinite_scroll.gif" width="200" height="400" />
 
 ## Alert Dialog Form
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/alert_dialog_form.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/alert_dialog_form.gif" width="200" height="400" />
 
 ## Custom Scroll View
 Aqui, temos 4 Widgets de exemplo:
@@ -20,13 +20,13 @@ Aqui, temos 4 Widgets de exemplo:
 
 - SliverGrid (útil para criar Grids)
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/custom-scroll-view.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/custom-scroll-view.gif" width="200" height="400" />
 
 
 ## Custom Input Field
 Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um input obrigatório para imagens.
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets/images/previews/custom_form_input.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/custom_form_input.gif" width="200" height="400" />
 
 
 ## Getting Started
