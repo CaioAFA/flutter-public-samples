@@ -12,22 +12,23 @@ class _ShimmerHomeState extends State<ShimmerHome> {
   String _title = '';
   String _subtitle = '';
 
-  void _loadData() async {
-    await Future.delayed(Duration(seconds: 2));
+  void _loadData(){
+    Future.delayed(Duration(seconds: 2)).then((_){
+      setState(() {
+        _isLoading = false;
 
-    setState(() {
-      _isLoading = false;
-
-      _title = 'Título';
-      _subtitle = 'Subtitulo';
+        _title = 'Título';
+        _subtitle = 'Subtitulo';
+      });
     });
+  }
+
+  _ShimmerHomeState(){
+    _loadData();
   }
 
   @override
   Widget build(BuildContext context) {
-
-    _loadData();
-
     return Scaffold(
       appBar: AppBar(
         title: Text('Shimmer - Loading Effect'),
@@ -41,8 +42,8 @@ class _ShimmerHomeState extends State<ShimmerHome> {
                 leading: _isLoading ? _renderCircularShimmer() : CircleAvatar(
                   child: Icon(Icons.person),
                 ),
-                title: _isLoading ? _renderShimmer(width: 100, height: 20) : Text(_title),
-                subtitle: _isLoading ? _renderShimmer(width: 50, height: 10) : Text(_subtitle),
+                title: _isLoading ? _renderShimmer(height: 20) : Text(_title),
+                subtitle: _isLoading ? _renderShimmer(height: 10) : Text(_subtitle),
               )
             ],
           ),
