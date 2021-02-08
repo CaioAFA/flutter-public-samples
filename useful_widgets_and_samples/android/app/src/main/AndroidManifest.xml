@@ -7,6 +7,7 @@
          FlutterApplication and put your custom class here. -->
     <application
         android:name="io.flutter.app.FlutterApplication"
+        android:requestLegacyExternalStorage="true"
         android:label="useful_widgets"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -44,4 +45,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
     </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
 </manifest>
