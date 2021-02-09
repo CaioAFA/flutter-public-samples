@@ -28,6 +28,7 @@ Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/custom_form_input.gif" width="200" height="400" />
 
 ## Shimmer - Efeito de Carregamento
+- Utiliza o plugin **shimmer**
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/shimmer.gif" width="200" height="400" />
 
