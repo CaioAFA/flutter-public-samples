@@ -7,7 +7,7 @@ class ListBloc extends BlocBase{
   Stream <List<String>> get getList => _listController.stream;
 
   ListBloc(){
-    // Load the data ins
+    // Load the data when BLoC is created
     _listController.sink.add(_data);
   }
 

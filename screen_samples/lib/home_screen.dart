@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:screen_samples/bloc_form_with_validator_and_loading/bloc_form_with_validator_and_loading_home.dart';
 import 'package:screen_samples/bloc_list_with_filter/bloc_list_with_filter_home.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,6 +24,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => BlocListWithFilterHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'BLoC - Formulário Com Validação',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => BlocFormWithValidatorAndLoadingHome())
                 );
               }
           ),
