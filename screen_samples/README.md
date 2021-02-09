@@ -3,6 +3,10 @@
 Flutter Screen Samples.
 
 ## BLoC - Lista Com Filtro
+Plugins utilizados:
+
+- BLoC Provider
+- RX Dart
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/screen_samples/images/previews/bloc_list_with_filter.gif" width="200" height="400" />
 
