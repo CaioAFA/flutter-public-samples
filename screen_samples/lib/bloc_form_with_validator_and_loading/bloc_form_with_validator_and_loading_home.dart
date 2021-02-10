@@ -11,15 +11,36 @@ class BlocFormWithValidatorAndLoadingHome extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.blue, Colors.pink, Colors.black]
+            colors: [Colors.black, Colors.white, Colors.black]
           )
         ),
         child: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          child: Stack(
             children: [
-              _renderFormTitle(),
-              FormWithValidatorAndLoadingSample()
+              ListView(
+                children: [
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      _renderFormTitle(),
+                      SizedBox(height: 150,),
+                      FormWithValidatorAndLoadingSample()
+                    ],
+                  ),
+                ]
+              ),
+
+              // Loading Container
+              /*
+              Container(
+                color: Colors.black.withAlpha(150),
+                child: Center(
+                  child: CircularProgressIndicator(
+                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                  ),
+                ),
+              )
+             */
             ],
           ),
         ),
@@ -32,14 +53,14 @@ class BlocFormWithValidatorAndLoadingHome extends StatelessWidget {
       'BLoC - Formulário Com Validação E Loading',
       textAlign: TextAlign.center,
       style: TextStyle(
-        color: Colors.black,
+        color: Colors.white,
         fontSize: 40.0,
         fontWeight: FontWeight.bold,
         shadows: <Shadow>[
           Shadow(
             offset: Offset(3.0, 3.0),
             blurRadius: 8.0,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ],
       ),
