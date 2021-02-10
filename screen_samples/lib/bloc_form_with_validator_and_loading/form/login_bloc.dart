@@ -16,7 +16,7 @@ class LoginBloc extends BlocBase with FormValidator{
 
   final _stateController = BehaviorSubject<LoginState>(); // Form is loading? Is Idle?
 
-  // Field validation
+  // Get Field with validation
   Stream<String> get outEmail => _emailController.stream.transform(validateEmail);
   Stream<String> get outPassword => _passwordController.stream.transform(validatePassword);
 

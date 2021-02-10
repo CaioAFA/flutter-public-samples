@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:screen_samples/bloc_form_with_validator_and_loading/form/login_bloc.dart';
-import 'package:screen_samples/bloc_form_with_validator_and_loading/form/validator.dart';
 
 class FormSample extends StatefulWidget {
 
