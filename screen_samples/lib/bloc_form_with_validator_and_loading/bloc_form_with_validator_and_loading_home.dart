@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:screen_samples/bloc_form_with_validator_and_loading/form/form_with_validator_and_loading_home.dart';
+import 'package:screen_samples/bloc_form_with_validator_and_loading/form/form_sample.dart';
+import 'package:screen_samples/bloc_form_with_validator_and_loading/form/login_bloc.dart';
 
 class BlocFormWithValidatorAndLoadingHome extends StatelessWidget {
+
+  final _loginBloc = LoginBloc();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,23 +28,29 @@ class BlocFormWithValidatorAndLoadingHome extends StatelessWidget {
                     children: [
                       _renderFormTitle(),
                       SizedBox(height: 150,),
-                      FormWithValidatorAndLoadingSample()
+                      FormSample(_loginBloc)
                     ],
                   ),
                 ]
               ),
 
               // Loading Container
-              /*
-              Container(
-                color: Colors.black.withAlpha(150),
-                child: Center(
-                  child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                  ),
-                ),
+              StreamBuilder<LoginState>(
+                stream: _loginBloc.outState,
+                builder: (context, snapshot) {
+                  if(!snapshot.hasData) return IgnorePointer(); // Will ignore touch events
+                  if(snapshot.data != LoginState.LOADING) return IgnorePointer();
+
+                  return Container(
+                    color: Colors.black.withAlpha(150),
+                    child: Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    ),
+                  );
+                }
               )
-             */
             ],
           ),
         ),
