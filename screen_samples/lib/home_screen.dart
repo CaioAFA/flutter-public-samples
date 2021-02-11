@@ -28,8 +28,8 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'BLoC - Formulário Com Validação',
-              imagePath: 'images/no-image.jpg',
+              title: 'BLoC - Formulário Com Validação e Loading',
+              imagePath: 'images/previews/bloc_form_with_validation_and_loading.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => BlocFormWithValidatorAndLoadingHome())

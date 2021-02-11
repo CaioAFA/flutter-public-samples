@@ -40,7 +40,7 @@ class BlocFormWithValidatorAndLoadingHome extends StatelessWidget {
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [Colors.black, Colors.white, Colors.black]
+            colors: [Colors.blueGrey, Colors.white, Colors.blueGrey]
           )
         ),
         child: SafeArea(

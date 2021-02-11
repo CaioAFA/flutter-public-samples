@@ -5,10 +5,14 @@ Flutter Screen Samples.
 ## BLoC - Lista Com Filtro
 Plugins utilizados:
 
-- BLoC Provider
+- BLoC Pattern
 - RX Dart
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/screen_samples/images/previews/bloc_list_with_filter.gif" width="200" height="400" />
+
+## BLoC - Formulário Com Validação E Loading
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/screen_samples/images/previews/bloc_form_with_validation_and_loading.gif" width="200" height="400" />
 
 ## Getting Started
 
