@@ -14,6 +14,24 @@ Plugins utilizados:
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/screen_samples/images/previews/bloc_form_with_validation_and_loading.gif" width="200" height="400" />
 
+## Telas de Pesquisa
+- Para essas telas, utilizamos SearchDelegates!
+
+<table>
+  <tr>
+    <td>Pesquisar e Retornar</td>
+    <td>Pesquisar, Desenhar e Retornar</td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://github.com/CaioAFA/flutter-public-samples/blob/master/screen_samples/images/previews/search_return.gif" width="200" height="400"/>
+    </td>
+    <td>
+      <img src="https://github.com/CaioAFA/flutter-public-samples/blob/master/screen_samples/images/previews/search_render_return.gif" width="200" height="400"/>
+    </td>
+  </tr>
+</table>
+ 
 ## Getting Started
 
 This project is a starting point for a Flutter application.
