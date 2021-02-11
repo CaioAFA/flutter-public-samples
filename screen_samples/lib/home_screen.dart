@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:screen_samples/bloc_form_with_validator_and_loading/bloc_form_with_validator_and_loading_home.dart';
 import 'package:screen_samples/bloc_list_with_filter/bloc_list_with_filter_home.dart';
+import 'package:screen_samples/search_render_return/home.dart';
+import 'package:screen_samples/search_return/home.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -32,7 +34,25 @@ class HomeScreen extends StatelessWidget {
               imagePath: 'images/previews/bloc_form_with_validation_and_loading.gif',
               onTap: (){
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => BlocFormWithValidatorAndLoadingHome())
+                    MaterialPageRoute(builder: (context) => BlocFormWithValidatorAndLoadingHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Tela de Pesquisa 1 - Pesquisar e Retornar Resultado',
+              imagePath: 'images/previews/search_return.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SearchReturnHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Tela de Pesquisa 2 - Pesquisar, Renderizar Widgets e Retornar Resultado',
+              imagePath: 'images/previews/search_render_return.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SearchRenderReturnHome())
                 );
               }
           ),
