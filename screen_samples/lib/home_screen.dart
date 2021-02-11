@@ -37,7 +37,7 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Novos Widgets serão adicionados aqui quando eu descobri-los!',
+              title: 'Novas Telas serão adicionadas aqui quando eu descobrir bons exemplos!',
               imagePath: 'images/no-image.jpg',
               onTap: (){}
           ),
