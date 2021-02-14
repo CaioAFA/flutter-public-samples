@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:useful_widgets/alert_dialog_form/alert_dialog_form_home.dart';
 import 'package:useful_widgets/custom_form_input/custom_form_input_home.dart';
+import 'package:useful_widgets/drag_and_drop/drag_and_drop_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
 import 'package:useful_widgets/shimmer/shimmer_home.dart';
 
@@ -65,6 +66,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ShimmerHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Drag And Drop Sample',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => DragAndDropHome())
                 );
               }
           ),
