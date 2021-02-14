@@ -68,7 +68,7 @@ class _DragAndDropHomeState extends State<DragAndDropHome> {
             children: [
               SizedBox(height: 20,),
               Text(
-                'Mova as frutas para a coluna da direita',
+                'Mova somente as frutas para a coluna da direita',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontSize: 26,
@@ -95,6 +95,9 @@ class _DragAndDropHomeState extends State<DragAndDropHome> {
                               // Data to transfer
                               data: food,
 
+                              // Place the "feedback" under the pointer
+                              dragAnchor: DragAnchor.pointer,
+
                               // What should appear at your finger location
                               feedback: Material(
                                 child: ConstrainedBox(
@@ -114,9 +117,6 @@ class _DragAndDropHomeState extends State<DragAndDropHome> {
                                 enabled: false,
                                 tileColor: Colors.grey,
                               ),
-
-                              // Place the "feedback" under the pointer
-                              dragAnchor: DragAnchor.pointer,
 
                               child: ListTile(
                                 leading: CircleAvatar(

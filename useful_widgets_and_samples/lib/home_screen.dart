@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Drag And Drop Sample',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/drag_and_drop.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => DragAndDropHome())

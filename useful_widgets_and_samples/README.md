@@ -32,6 +32,12 @@ Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/shimmer.gif" width="200" height="400" />
 
+## Drag And Drop
+- Draggable é o Widget que pode ser movido
+- DragTarget é para onde arrastamos o conteúdo
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/drag_and_drop.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
