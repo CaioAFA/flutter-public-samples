@@ -14,6 +14,10 @@ Exemplos de códigos para Navegação nos Apps.
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/TabNavigation.gif" width="200" height="400" />
 
+## Bottom Navigation Bar
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/BottomNavigationBar.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

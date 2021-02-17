@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter_navigation_samples/bottom_navigation_bar/home.dart';
 import 'package:flutter_navigation_samples/drawer_navigation/home.dart';
 import 'package:flutter_navigation_samples/gesture_navigation/home.dart';
 import 'package:flutter_navigation_samples/tab_navigation/home.dart';
@@ -44,6 +45,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context)=>TabNavigationHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Bottom Navigation Bar',
+              imagePath: 'images/BottomNavigationBar.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context)=>BottomNavigationBarHome())
                 );
               }
           ),
