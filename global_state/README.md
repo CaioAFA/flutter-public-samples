@@ -5,7 +5,12 @@ App de exemplo escrito em Flutter para demonstrar **Gerenciamento Global de Esta
 Plugins para Gerenciamento de Estado Utilizados (lembre-se de colocar os Widget que englobam esse estado global cobrindo apenas o necessário da aplicação):
 - Provider (Exemplo nesse App)
 - ScopedModel (Exemplo nesse App)
-- BLoC (Exemplo em outro App desse repositório)
+
+
+Outros plugins para gerenciamento de estado em outros diretorios desse repositorio (mais recomendados)
+- BLoC
+- MobX
+
 
 # Comparações
 ![Comparações](https://github.com/CaioAFA/flutter-public-samples/blob/master/global_state/misc/global_state_comparison.jpg?raw=true)
