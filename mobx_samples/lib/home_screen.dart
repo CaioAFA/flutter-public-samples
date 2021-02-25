@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mobx_samples/computed_value/computed_value_home.dart';
+import 'package:mobx_samples/list_observable/list_observable_home.dart';
+import 'package:mobx_samples/reaction_sample/reaction_sample_home.dart';
 import 'package:mobx_samples/simple_observable/simple_observable_home.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -23,6 +26,33 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SimpleObservableHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Observable Com Estrutura De Dados (Exemplo Com List)',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ListObservableHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Valor Computado',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ComputedValueHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Reações (Exemplo Com Tela De Login)',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => ReactionSampleHome())
                 );
               }
           ),
