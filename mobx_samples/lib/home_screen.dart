@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobx_samples/computed_value/computed_value_home.dart';
+import 'package:mobx_samples/global_state/global_state_home.dart';
 import 'package:mobx_samples/list_observable/list_observable_home.dart';
 import 'package:mobx_samples/reaction_sample/reaction_sample_home.dart';
 import 'package:mobx_samples/simple_observable/simple_observable_home.dart';
@@ -53,6 +54,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => ReactionSampleHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Estado Global (Necessita Plugin Provider)',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => GlobalStateHome())
                 );
               }
           ),

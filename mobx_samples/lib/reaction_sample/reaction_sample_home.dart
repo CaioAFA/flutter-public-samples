@@ -24,26 +24,33 @@ class _ReactionSampleHomeState extends State<ReactionSampleHome> {
   _ReactionSampleHomeState(){
     _emailController = TextEditingController(text: _loginStore.email);
     _passwordController = TextEditingController(text: _loginStore.password);
+  }
 
-    // Execute the code when the state changes
+
+  @override
+  void didChangeDependencies(){
+    super.didChangeDependencies();
+
+    // Execute the code when the state changes.
+    // This is the best place to create these functions: didChangeDependencies
     _reactionDisposer = reaction(
-      (_) => _loginStore.loginStatus,
-      (loginStatus){
-        bool isLogged = loginStatus['isLogged'];
-        String errorMessage = loginStatus['errorMessage'];
+            (_) => _loginStore.loginStatus,
+            (loginStatus){
+          bool isLogged = loginStatus['isLogged'];
+          String errorMessage = loginStatus['errorMessage'];
 
-        _scaffoldKey.currentState.showSnackBar(
-          SnackBar(
-            content: Text(
-              isLogged ? 'Login efetuado com sucesso!' : errorMessage,
-              style: TextStyle(
-                fontSize: 20.0,
-              ),
-            ),
-            backgroundColor: isLogged ? Colors.green : Colors.red,
-          )
-        );
-      }
+          _scaffoldKey.currentState.showSnackBar(
+              SnackBar(
+                content: Text(
+                  isLogged ? 'Login efetuado com sucesso!' : errorMessage,
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                ),
+                backgroundColor: isLogged ? Colors.green : Colors.red,
+              )
+          );
+        }
     );
   }
 

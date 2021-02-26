@@ -30,3 +30,4 @@ flutter:
 
   assets:
     - images/
+    - images/global_state_sample/
