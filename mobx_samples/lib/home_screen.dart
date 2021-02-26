@@ -23,7 +23,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           _createCard(
               title: 'Observable Simples',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/simple-observable.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SimpleObservableHome())
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Observable Com Estrutura De Dados (Exemplo Com List)',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/list-observable.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => ListObservableHome())
@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Valor Computado',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/computed-value.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => ComputedValueHome())
@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Reações (Exemplo Com Tela De Login)',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/reaction.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => ReactionSampleHome())
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Estado Global (Necessita Plugin Provider)',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/global-state.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => GlobalStateHome())

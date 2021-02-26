@@ -10,6 +10,34 @@ MobX Code Samples
 - Execute o comando abaixo durante o desenvolvimento para gerar os arquivos do MobX:
 flutter packages pub run build_runner watch
 
+- Acesse a documentação do MobX e veja o que são:
+    - Observables
+    - Actions
+    - Widget Observer
+    - Computed Values
+    - Reactions e seus tipos de reação
+
+## Observable Simples
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/simple-observable.gif" width="200" height="400" />
+
+## Observable Com Estrutura De Dados (Exemplo Com Lista)
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/list-observable.gif" width="200" height="400" />
+
+## Valor Computado
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/computed-value.gif" width="200" height="400" />
+
+## Reações
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/reaction.gif" width="200" height="400" />
+
+## Estado Global Com MobX
+- Necessita do Plugin Provider
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/global-state.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
