@@ -82,7 +82,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Dropdown Button',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/dropdown-button.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => DropdownButtonHome())
@@ -91,7 +91,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Marquee (Necessita De Plugin)',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/marquee.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => MarqueeHome())

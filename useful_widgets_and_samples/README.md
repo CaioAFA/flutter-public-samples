@@ -38,6 +38,15 @@ Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/drag_and_drop.gif" width="200" height="400" />
 
+## Dropdown Button
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/dropdown-button.gif" width="200" height="400" />
+
+## Marquee
+- Necessita do plugin Marquee
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/marquee.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
