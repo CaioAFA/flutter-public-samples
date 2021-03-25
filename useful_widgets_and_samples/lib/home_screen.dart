@@ -5,6 +5,7 @@ import 'package:useful_widgets/drag_and_drop/drag_and_drop_home.dart';
 import 'package:useful_widgets/dropdown_button/dropdown_button_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
 import 'package:useful_widgets/marquee/marquee_home.dart';
+import 'package:useful_widgets/page_view_animation/page_view_animation_home.dart';
 import 'package:useful_widgets/shimmer/shimmer_home.dart';
 
 import 'alert_dialog_form/alert_dialog_form_home.dart';
@@ -94,7 +95,16 @@ class HomeScreen extends StatelessWidget {
               imagePath: 'images/previews/marquee.gif',
               onTap: (){
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => MarqueeHome())
+                    MaterialPageRoute(builder: (context) => MarqueeHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Animação Com Page View',
+              imagePath: 'images/previews/page-view-animation.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => PageViewAnimationHome())
                 );
               }
           ),
