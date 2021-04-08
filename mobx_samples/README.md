@@ -34,9 +34,14 @@ flutter packages pub run build_runner watch
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/reaction.gif" width="200" height="400" />
 
 ## Estado Global Com MobX
-- Necessita do Plugin Provider
+- Necessita do Plugin GetIt (com ele, podemos acessar um mesmo Objeto em qualquer local do App)
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/global-state.gif" width="200" height="400" />
+
+## Formulário Com MobX
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/form-sample.gif" width="200" height="400" />
+
 
 ## Getting Started
 

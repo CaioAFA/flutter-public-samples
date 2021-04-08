@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Useful Widgets'),
+        title: Text('Flutter - MobX Samples'),
         centerTitle: true,
       ),
       body: ListView(
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Estado Global (Necessita Plugin Provider)',
+              title: 'Estado Global (Necessita do Plugin GetIt)',
               imagePath: 'images/previews/global-state.gif',
               onTap: (){
                 Navigator.of(context).push(
@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Formulário de Exemplo com MobX',
-              imagePath: 'images/previews/global-state.gif',
+              imagePath: 'images/previews/form-sample.gif',
               onTap: (){
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SampleFormHome())

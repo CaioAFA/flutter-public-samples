@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:mobx_samples/global_state/stores/cart_store.dart';
-import 'package:provider/provider.dart';
 
 class CartScreen extends StatefulWidget {
   @override
@@ -10,14 +10,7 @@ class CartScreen extends StatefulWidget {
 
 class _CartScreenState extends State<CartScreen> {
 
-  CartStore cartStore;
-
-  @override
-  void initState() {
-    cartStore = Provider.of<CartStore>(context, listen: false);
-
-    super.initState();
-  }
+  final CartStore cartStore = GetIt.I<CartStore>();
 
   @override
   Widget build(BuildContext context) {

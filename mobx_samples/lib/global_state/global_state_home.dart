@@ -1,30 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:get_it/get_it.dart';
 import 'package:mobx_samples/global_state/add_items_screen.dart';
 import 'package:mobx_samples/global_state/cart_screen.dart';
 import 'package:mobx_samples/global_state/stores/cart_store.dart';
-import 'package:provider/provider.dart';
 
-class GlobalStateHome extends StatefulWidget {
-  @override
-  _GlobalStateHomeState createState() => _GlobalStateHomeState();
-}
+// Pay attention on how we use the cartStore variable.
+class GlobalStateHome extends StatelessWidget {
 
-// Use Stateful Widgets to use Global State.
-class _GlobalStateHomeState extends State<GlobalStateHome> {
-
-  // See "main.dart" file. Pay attention to Provider configuration:
+  // See "main.dart" file. Pay attention to GetIt configuration:
   // we need it to use Global State.
-  CartStore cartStore;
-
-  @override
-  void initState() {
-    // Get the Store to access global state. We need to pass false to "listen"
-    // when it gives the error dependOnInheritedWidgetOfExactType<_InheritedProviderScope...
-    cartStore = Provider.of<CartStore>(context, listen: false);
-
-    super.initState();
-  }
+  // Here, we get the Store to access global state.
+  final CartStore cartStore = GetIt.I<CartStore>();
 
   @override
   Widget build(BuildContext context) {

@@ -15,7 +15,8 @@ dependencies:
   # Needed dependencies
   mobx: ^1.1.1
   flutter_mobx: ^1.1.0
-  provider: ^4.3.3 # If you need to have global state, add this dependency
+  get_it: ^4.0.4 # If you need to have global state, add this dependency.
+                 # With it, we can get an object at any place.
 
 dev_dependencies:
   flutter_test:

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get_it/get_it.dart';
 import 'package:mobx_samples/global_state/stores/cart_store.dart';
-import 'package:provider/provider.dart';
 
 class AddItemsScreen extends StatefulWidget {
   @override
@@ -11,14 +11,7 @@ class _AddItemsScreenState extends State<AddItemsScreen> {
 
   GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
 
-  CartStore cartStore;
-
-  @override
-  void initState() {
-    cartStore = Provider.of<CartStore>(context, listen: false);
-
-    super.initState();
-  }
+  final CartStore cartStore = GetIt.I<CartStore>();
 
   @override
   Widget build(BuildContext context) {
