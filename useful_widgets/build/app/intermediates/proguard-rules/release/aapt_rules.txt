@@ -1,0 +1,6 @@
+# Referenced at C:\Users\quarto\Desktop\flutter\flutter-public-samples\useful_widgets\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:17
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at C:\Users\quarto\Desktop\flutter\flutter-public-samples\useful_widgets\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:22
+-keep class com.caioarrabal.useful_widgets.MainActivity { <init>(); }
+# Referenced at C:\Users\quarto\Desktop\flutter\flutter-public-samples\useful_widgets\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:17
+-keep class io.flutter.app.FlutterApplication { <init>(); }

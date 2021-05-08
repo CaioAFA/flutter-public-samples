@@ -4,6 +4,8 @@ import 'package:screen_samples/bloc_list_with_filter/bloc_list_with_filter_home.
 import 'package:screen_samples/search_render_return/home.dart';
 import 'package:screen_samples/search_return/home.dart';
 
+import 'toggle_appear_button/toggle_appear_button_home.dart';
+
 class HomeScreen extends StatelessWidget {
 
   final TextStyle cardTextStyle = TextStyle(
@@ -53,6 +55,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => SearchRenderReturnHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Scroll Toggle Button',
+              imagePath: 'images/previews/scroll-toggle-button.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => ToggleAppearButtonHome())
                 );
               }
           ),

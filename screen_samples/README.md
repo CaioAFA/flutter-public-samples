@@ -31,7 +31,12 @@ Plugins utilizados:
     </td>
   </tr>
 </table>
- 
+
+## Scroll Toggle Button
+- Usamos uma classe Stateful com animações para criar esse efeito
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/screen_samples/images/previews/scroll-toggle-button.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
