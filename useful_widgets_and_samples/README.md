@@ -42,14 +42,18 @@ Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/dropdown-button.gif" width="200" height="400" />
 
-## Marquee
-- Necessita do plugin Marquee
+## Widgets Para Textos Grandes
+- Necessita de plugins
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/marquee.gif" width="200" height="400" />
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/big-text-widgets.gif" width="200" height="400" />
 
 ## Page View Animation
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/page-view-animation.gif" width="200" height="400" />
+
+## AppBar Search
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/appbar-search.gif" width="200" height="400" />
 
 ## Getting Started
 
