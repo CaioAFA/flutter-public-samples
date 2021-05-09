@@ -6,6 +6,7 @@ import 'package:useful_widgets/custom_form_input/custom_form_input_home.dart';
 import 'package:useful_widgets/drag_and_drop/drag_and_drop_home.dart';
 import 'package:useful_widgets/dropdown_button/dropdown_button_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
+import 'package:useful_widgets/no_connection_block/no_connection_block_home.dart';
 import 'package:useful_widgets/page_view_animation/page_view_animation_home.dart';
 import 'package:useful_widgets/shimmer/shimmer_home.dart';
 
@@ -93,7 +94,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Widgets Para Textos Grandes (Necessita De Plugins)',
-              imagePath: 'images/previews/marquee.gif',
+              imagePath: 'images/previews/big-text-widgets.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => BigTextWidgetsHome())
@@ -111,10 +112,19 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'App Bar Search',
-              imagePath: 'images/previews/page-view-animation.gif',
+              imagePath: 'images/previews/appbar-search.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => AppBarSearchHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Teste',
+              imagePath: 'images/previews/page-view-animation.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => NoConnectionBlockHome())
                 );
               }
           ),
