@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:useful_widgets/alert_dialog_form/alert_dialog_form_home.dart';
+import 'package:useful_widgets/appbar_seach/appbar_seach_home.dart';
+import 'package:useful_widgets/big_text_widgets/big_text_widgets_home.dart';
 import 'package:useful_widgets/custom_form_input/custom_form_input_home.dart';
 import 'package:useful_widgets/drag_and_drop/drag_and_drop_home.dart';
 import 'package:useful_widgets/dropdown_button/dropdown_button_home.dart';
@@ -91,11 +93,11 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Marquee (Necessita De Plugin)',
+              title: 'Widgets Para Textos Grandes (Necessita De Plugins)',
               imagePath: 'images/previews/marquee.gif',
               onTap: (){
                 Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => MarqueeHome())
+                    MaterialPageRoute(builder: (context) => BigTextWidgetsHome())
                 );
               }
           ),
@@ -105,6 +107,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => PageViewAnimationHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'App Bar Search',
+              imagePath: 'images/previews/page-view-animation.gif',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => AppBarSearchHome())
                 );
               }
           ),
