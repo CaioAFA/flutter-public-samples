@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:useful_widgets/alert_dialog_form/alert_dialog_form_home.dart';
 import 'package:useful_widgets/appbar_seach/appbar_seach_home.dart';
 import 'package:useful_widgets/big_text_widgets/big_text_widgets_home.dart';
+import 'package:useful_widgets/binary_logic_select/binary_logic_select_home.dart';
 import 'package:useful_widgets/custom_form_input/custom_form_input_home.dart';
 import 'package:useful_widgets/drag_and_drop/drag_and_drop_home.dart';
 import 'package:useful_widgets/dropdown_button/dropdown_button_home.dart';
@@ -125,6 +126,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => NoConnectionBlockHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Selecionando Elementos Com Lógica Binária',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => BinaryLogicSelectHome())
                 );
               }
           ),
