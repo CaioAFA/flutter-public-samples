@@ -120,8 +120,8 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Teste',
-              imagePath: 'images/previews/page-view-animation.gif',
+              title: 'Bloquear App Sem Conexão Com A Internet',
+              imagePath: 'images/previews/no-connection-block.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => NoConnectionBlockHome())
@@ -164,10 +164,13 @@ class HomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Flexible( // With this Flexible, text wraps if necessary.
-                      child: Text(
-                        title,
-                        textAlign: TextAlign.center,
-                        style: cardTextStyle,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          title,
+                          textAlign: TextAlign.center,
+                          style: cardTextStyle,
+                        ),
                       ),
                     ),
                   ],
