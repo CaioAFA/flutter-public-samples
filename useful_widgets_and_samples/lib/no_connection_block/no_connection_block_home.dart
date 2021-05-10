@@ -60,6 +60,7 @@ class _NoConnectionBlockHomeState extends State<NoConnectionBlockHome> {
 
   @override
   void dispose() {
+    // This cancel the App Block without Internet
     listener.cancel();
 
     super.dispose();
