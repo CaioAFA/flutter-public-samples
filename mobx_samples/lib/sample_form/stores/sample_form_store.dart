@@ -13,7 +13,7 @@ abstract class _SampleFormStore with Store {
   void setName(String value) => name = value;
 
   @computed
-  bool get nameValid => name != null && name.length >= 6;
+  bool get nameValid => name != null && name.length >= 4;
   String get nameError {
     if(name == null || nameValid)
       return null;
@@ -21,7 +21,7 @@ abstract class _SampleFormStore with Store {
     else if(name.isEmpty)
       return 'Campo obrigatório!';
 
-    return 'Nome muito curto!';
+    return 'Insira um nome com mais de 4 caracteres!';
   }
 
   // ----------------------------- E-mail
