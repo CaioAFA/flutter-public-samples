@@ -131,7 +131,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Selecionando Elementos Com Lógica Binária',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/binary-logic-select.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => BinaryLogicSelectHome())

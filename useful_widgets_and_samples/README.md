@@ -59,6 +59,10 @@ Podemos criar campos personalizados para formulários. Nesse exemplo, criamos um
 
 <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/no-connection-block.gif" width="200" height="400" />
 
+## Selecionando Elementos - Implementação Com Lógica Binária
+
+<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/binary-logic-select.gif" width="200" height="400" />
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
