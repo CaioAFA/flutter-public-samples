@@ -11,7 +11,7 @@ class SlidableSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Slidable(
-      actionPane: SlidableDrawerActionPane(),
+      actionPane: SlidableDrawerActionPane(), // Try all of the Slidable<X>ActionPane's!
       actionExtentRatio: 0.25, // Children's size (in %)
       child: Container(
         color: Colors.white,
