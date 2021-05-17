@@ -151,7 +151,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Ações Com Slide',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/slide-actions.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => SlideActionsHome())
