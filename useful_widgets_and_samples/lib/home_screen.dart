@@ -11,6 +11,7 @@ import 'package:useful_widgets/list_wheel_scroll_view/list_wheel_scroll_view_hom
 import 'package:useful_widgets/no_connection_block/no_connection_block_home.dart';
 import 'package:useful_widgets/page_view_animation/page_view_animation_home.dart';
 import 'package:useful_widgets/shimmer/shimmer_home.dart';
+import 'package:useful_widgets/slide_actions/slide_actions_home.dart';
 
 import 'alert_dialog_form/alert_dialog_form_home.dart';
 import 'custom_scroll_view/custom_scroll_view_home.dart';
@@ -145,6 +146,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ListWheelScrollViewHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'Ações Com Slide',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => SlideActionsHome())
                 );
               }
           ),
