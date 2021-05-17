@@ -80,6 +80,19 @@ class BigTextWidgetsHome extends StatelessWidget {
               style: TextStyle(
                 color: Colors.black
               ),
+            ),
+            
+            _renderDivider(),
+            
+            _renderTitle('InteractiveViewer'),
+
+            Text(
+              'Faça gestos de Zoom.'
+            ),
+            InteractiveViewer(
+              child: Image.network(
+                'https://cdn.swapps.com/uploads/2018/07/trying-out-flutter.jpg'
+              ),
             )
           ],
         ),

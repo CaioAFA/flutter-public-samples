@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:useful_widgets/alert_dialog_form/alert_dialog_form_home.dart';
 import 'package:useful_widgets/appbar_seach/appbar_seach_home.dart';
-import 'package:useful_widgets/big_text_widgets/big_text_widgets_home.dart';
+import 'package:useful_widgets/big_widgets/big_text_widgets_home.dart';
 import 'package:useful_widgets/binary_logic_select/binary_logic_select_home.dart';
 import 'package:useful_widgets/custom_form_input/custom_form_input_home.dart';
 import 'package:useful_widgets/drag_and_drop/drag_and_drop_home.dart';
 import 'package:useful_widgets/dropdown_button/dropdown_button_home.dart';
 import 'package:useful_widgets/infinite_scroll/infinite_scroll_screen.dart';
+import 'package:useful_widgets/list_wheel_scroll_view/list_wheel_scroll_view_home.dart';
 import 'package:useful_widgets/no_connection_block/no_connection_block_home.dart';
 import 'package:useful_widgets/page_view_animation/page_view_animation_home.dart';
 import 'package:useful_widgets/shimmer/shimmer_home.dart';
@@ -94,7 +95,7 @@ class HomeScreen extends StatelessWidget {
               }
           ),
           _createCard(
-              title: 'Widgets Para Textos Grandes (Necessita De Plugins)',
+              title: 'Widgets Para Encapsular Widgets Grandes (Necessita De Plugins)',
               imagePath: 'images/previews/big-text-widgets.gif',
               onTap: (){
                 Navigator.of(context).push(
@@ -135,6 +136,15 @@ class HomeScreen extends StatelessWidget {
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => BinaryLogicSelectHome())
+                );
+              }
+          ),
+          _createCard(
+              title: 'List Wheel Scroll View',
+              imagePath: 'images/no-image.jpg',
+              onTap: (){
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => ListWheelScrollViewHome())
                 );
               }
           ),
