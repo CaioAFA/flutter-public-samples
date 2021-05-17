@@ -10,17 +10,13 @@ Useful Widgets Samples.
 | :---: | :---: | :---: | :---: |
 | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/drag_and_drop.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/dropdown-button.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/big-widgets.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/page-view-animation.gif" width="200" height="400" />
 
-| AppBar Search | Bloquear App Sem Internet | Select de Elementos [?](a "Implementação com Lógica binária") |
-| :---: | :---: | :---: |
-| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/appbar-search.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/no-connection-block.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/binary-logic-select.gif" width="200" height="400" /> |
+| AppBar Search | Bloquear App Sem Internet | Select de Elementos [?](a "Implementação com Lógica binária") | List Wheel Scroll View |
+| :---: | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/appbar-search.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/no-connection-block.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/binary-logic-select.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/list-wheel-scroll-view.gif" width="200" height="400" /> |
 
 | Custom Scroll View | Preview |
 | :--- | :---: |
 | Aqui, temos 4 Widgets de exemplo:<br/><br/>- SliverAppBar (repare na animação de quando a tela é "abaixada" e "levantada")<br/>- SliverToBoxAdapter (em um Custom Scroll View, tudo deve ser um Sliver. Esse Widget é útil quando queremos algo como um Container)<br/>- SliverList (útil para criar listas em um Custom Scroll View)<br/>- SliverGrid (útil para criar Grids) | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/custom-scroll-view.gif" width="200" height="400" /> |
-
-| List Wheel Scroll View |
-| :---: |
-| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/useful_widgets_and_samples/images/previews/list-wheel-scroll-view.gif" width="200" height="400" /> |
 
 ## Getting Started
 
