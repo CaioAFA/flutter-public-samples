@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:useful_widgets/list_wheel_scroll_view/basic_list_wheel.dart';
+import 'package:useful_widgets/list_wheel_scroll_view/magnification_list_wheel.dart';
+import 'package:useful_widgets/list_wheel_scroll_view/offset_axis_list_wheel.dart';
 
 class ListWheelScrollViewHome extends StatefulWidget {
 
@@ -24,9 +27,9 @@ class _ListWheelScrollViewHomeState extends State<ListWheelScrollViewHome> with 
         bottom: TabBar(
           controller: tabController,
           tabs: [
-            Text('Básico'),
-            Tab(icon: Icon(Icons.directions_transit)),
-            Tab(icon: Icon(Icons.directions_bike)),
+            Tab(text: 'Básico',),
+            Tab(text: 'Offset Axis',),
+            Tab(text: 'Magnification',),
           ],
         ),
         title: Text('List Wheel Scroll View'),
@@ -36,9 +39,9 @@ class _ListWheelScrollViewHomeState extends State<ListWheelScrollViewHome> with 
         physics: NeverScrollableScrollPhysics(),
         controller: tabController,
         children: [
-          Icon(Icons.directions_car),
-          Icon(Icons.directions_transit),
-          Icon(Icons.directions_bike),
+          BasicListWheel(),
+          OffsetAxisListWheel(),
+          MagnificationListWheel(),
         ],
       ),
     );

@@ -56,7 +56,7 @@ class ImageInput extends FormField<List>{
               ..add( // Add the "+" button
                 GestureDetector(
                   onTap: () async {
-                    final picker = ImagePicker();
+                    final ImagePicker picker = ImagePicker();
 
                     // Add image to List
                     final image = await picker.getImage(source: ImageSource.camera,);

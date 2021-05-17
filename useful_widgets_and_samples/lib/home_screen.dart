@@ -96,7 +96,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'Widgets Para Encapsular Widgets Grandes (Necessita De Plugins)',
-              imagePath: 'images/previews/big-text-widgets.gif',
+              imagePath: 'images/previews/big-widgets.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => BigTextWidgetsHome())
@@ -141,7 +141,7 @@ class HomeScreen extends StatelessWidget {
           ),
           _createCard(
               title: 'List Wheel Scroll View',
-              imagePath: 'images/no-image.jpg',
+              imagePath: 'images/previews/list-wheel-scroll-view.gif',
               onTap: (){
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => ListWheelScrollViewHome())

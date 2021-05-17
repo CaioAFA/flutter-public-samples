@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  image_picker: ^0.6.1
+  image_picker: ^0.7.5
   shimmer: ^1.0.0
   marquee: ^1.7.0
   readmore: ^2.0.0
