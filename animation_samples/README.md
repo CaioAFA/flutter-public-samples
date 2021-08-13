@@ -2,37 +2,13 @@
 
 Flutter Animation Samples.
 
-## Linear Animation
+| Linear Animation | Ping Pong Animation| Curve Animation | Hero Animation |
+| :---: | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/linear-animation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/ping-pong-animation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/curve-animation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/hero-animation.gif" width="200" height="400" /> |
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/linear-animation.gif" width="200" height="400" />
-
-## Ping Pong Animation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/ping-pong-animation.gif" width="200" height="400" />
-
-## Curve Animation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/curve-animation.gif" width="200" height="400" />
-
-## Hero Animation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/hero-animation.gif" width="200" height="400" />
-
-## List Slide Animation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/list-slide-animation.gif" width="200" height="400" />
-
-## Screen Transition Animation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/screen-transition-animation.gif" width="200" height="400" />
-
-## Staggered Animation (Duas Animações Ou Mais Simultâneas)
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/staggered-animation.gif" width="200" height="400" />
-
-## Loading Button Animation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/loading-button-animation.gif" width="200" height="400" />
+| List Slide Animation | Screen Transition Animation| Staggered Animation (duas ou mais) | Loading Button Animation |
+| :---: | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/list-slide-animation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/screen-transition-animation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/staggered-animation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/animation_samples/images/animations_preview/loading-button-animation.gif" width="200" height="400" /> |
 
 ## Considerações e Observações
 

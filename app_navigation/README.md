@@ -2,21 +2,9 @@
 
 Exemplos de códigos para Navegação nos Apps.
 
-## Drawer Navigation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/DrawerNavigation.gif" width="200" height="400" />
-
-## Gesture Navigation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/GestureNavigator.gif" width="200" height="400" />
-
-## Tab Navigation
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/TabNavigation.gif" width="200" height="400" />
-
-## Bottom Navigation Bar
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/BottomNavigationBar.gif" width="200" height="400" />
+| Drawer Navigation | Gesture Navigation | Tab Navigation | Bottom Navigation Bar |
+| :---: | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/DrawerNavigation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/GestureNavigator.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/TabNavigation.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/app_navigation/images/BottomNavigationBar.gif" width="200" height="400" /> |
 
 ## Getting Started
 

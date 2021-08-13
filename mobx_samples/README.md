@@ -17,31 +17,13 @@ flutter packages pub run build_runner watch
     - Computed Values
     - Reactions e seus tipos de reação
 
-## Observable Simples
+| Observable Simples | Observable Com Estrutura De Dados | Valor Computado | Reações |
+| :---: | :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/simple-observable.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/list-observable.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/computed-value.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/reaction.gif" width="200" height="400" /> |
 
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/simple-observable.gif" width="200" height="400" />
-
-## Observable Com Estrutura De Dados (Exemplo Com Lista)
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/list-observable.gif" width="200" height="400" />
-
-## Valor Computado
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/computed-value.gif" width="200" height="400" />
-
-## Reações
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/reaction.gif" width="200" height="400" />
-
-## Estado Global Com MobX
-- Necessita do Plugin GetIt (com ele, podemos acessar um mesmo Objeto em qualquer local do App)
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/global-state.gif" width="200" height="400" />
-
-## Formulário Com MobX
-
-<img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/form-sample.gif" width="200" height="400" />
-
+| Estado Global Com MobX [?](a "Necessita do Plugin GetIt (com ele, podemos acessar um mesmo Objeto em qualquer local do App)") | Formulário Com MobX |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/global-state.gif" width="200" height="400" /> | <img src="https://raw.githubusercontent.com/CaioAFA/flutter-public-samples/master/mobx_samples/images/previews/form-sample.gif" width="200" height="400" /> |
 
 ## Getting Started
 
