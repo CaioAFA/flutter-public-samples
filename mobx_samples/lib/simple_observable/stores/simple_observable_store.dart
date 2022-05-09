@@ -1,4 +1,7 @@
-/* To generate this code, use a template: it's easier! */
+/*
+  To generate this code, use a template: it's easier!
+  How to create a template: https://docs.google.com/document/d/1UbcWJmlJUl58RhYBkz7qSdCnhX6Gr7wQZxsAdoT1Xuc/edit?usp=sharing
+*/
 
 import 'package:mobx/mobx.dart';
 
